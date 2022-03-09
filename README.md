@@ -1,2 +1,0 @@
-# React
-Curso UTN React
