@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    
+     <title>Seguros No Paga</title>
+</head>
+<body>
+    <div >
+        
+            <form name="formulario" id="formularioId" onsubmit ="campoObligatorio(); return false" class="formulario">
+                <div class="contenedor-campos ">
+                    <div class="campo">
+                        <label for="">Nombre </label>
+                        <input type="text" placeholder="Ingresa tu Nombre " required >
+                    </div>
+                    <div class="campo">
+                        <label for="">Apellido </label>
+                        <input type="text" placeholder="Ingresa tu Apellido " required>
+                    </div>
+                    <div class="campo">
+                        <label for="">DNI </label>
+                        <input type="number" placeholder="Ingresa tu DNI" required>
+                    </div>
+                    <div class="campo">
+                        <label for="">Email</label>
+                        <input type="email"placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="campo">
+                        <label for="">Telefono </label>
+                        <input type="text" placeholder="Ingresa tu Telefono ">
+                    </div>
+                    <div >
+                        
+
+                        <div class="botones">
+                            <label>Seleccione Tipo de Seguro</label>
+                            <select name="seguro" id="seguroId" onchange="mostrarSeguro()" class="opciones">
+                                <option value="basico">Basico</option>
+                                <option value="intermedio">Intermedio</option>
+                                <option value="premium">Premium</option>
+                            </select>
+                            <span id="valorSeguro" class="valor"></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <input type="submit">
+        
+            </form>
+        
+    </div>
+    
+</body>
+<script src="scripts.js"></script>
+</html>
